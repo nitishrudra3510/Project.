@@ -1,0 +1,100 @@
+body{
+    font-family: sans-serif;    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bt_dark {
+    display: inline-block;
+    background-color: #212121;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: narrpw;
+    transition: all 0.4s;
+
+
+}
+.bt_dark:hover{
+    background-color: #fff;
+    color: #f4511e;
+}
+.margin__top {
+    margin-top: 15px;
+}
+
+
+.navbar ul{
+
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(165, 7, 165);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+
+    
+}
+
+/*.navbar ul li{
+    display: inline;
+   
+    width: 80px;
+    margin: 20px;
+    padding: 18px;
+    text-align: l;*/
+
+
+
+.navbar ul li a{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    padding: 25px 15px;
+    
+    letter-spacing: 2px;
+    margin: 30px;
+    
+    
+}
+
+.navbar ul li a:hover{
+    text-decoration: none;
+    background-color: darkgrey;
+    width: 100%;
+}
+.active, .navbar ul li a:hover{
+    background: red;
+}
+
+.rudra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(#f451ef, #f4511e), url("image5.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.rudra_text{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.rudra_text h1 {
+    font-size: 100px;
+    font-weight: 500;
+    
+}
+
+
+.rudra_text p {
+    letter-spacing: 5px;
+}

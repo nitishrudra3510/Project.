@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SERVICES</title>
+</head>
+<body style="background-color:rgb(216, 153, 153)" >
+    <div><a href=""></a>
+    <img src="https://deshiz.com/wp-content/uploads/2018/02/Online_Food_Delivery_Services.png"height="210" width="300" alt="">
+    <center><big><b>FOOD DELIVERY FROM 10 AM TO 10 PM</b></big></center>
+    <big><p>Food Delivery Workflow After Ordering</p></big>
+    <pre ">
+        Once a customer places an order using a mobile or web client using the Ordering Service, the order processing workflow could be as follows:
+
+        Ordering Service publishes a Message to the queue about the order so that the downstream services can start processing.
+
+        Notification Services reads message and notifies the corresponding restaurant and the customer that an order is placed and pending their acceptance.
+
+        Once the order is accepted by the restaurant then the Order Management Service will publish a Message to the queue regarding the acceptance of the order.
+        
+        Dispatch Service will read the Message and post an area-specific Message to the queue. Dispatch Service auto-assign an order to an available Delivery Man based on a matching algorithm and will publish a related Message.
+
+        Notification Service will read message and notify the customer that the restaurant accepted the order. And Notification Service will read message and notify the Delivery Man in the area about the availability of the order to process.
+
+        Once a Delivery Man will accept the order then Dispatch Service will then post a Message to the queue about Delivery Man assignment or acceptance.
+
+        Notification Service will read message and notify the customer and the restaurant about the Delivery Man assignment. And the restaurant publishes a Message to the queue regarding Food is preparing.
+
+        Once the food is ready to be picked up, the restaurant will update the status of the order using Order Management Service and Order Management Service will post a Message to the queue that the food is ready to be picked up.
+
+        Notification Service will read Message and notify the assigned Delivery Man as well as the customer that the food is ready to be picked up.
+
+        After the Delivery Man picks up the food, the restaurant staff will update the status of the order using Order Management Service and Order Management Service will then post a Message to the queue that the order has been picked up.
+
+        Notification Service reads Message and notifies the customer that the order is picked up and on the way.
+
+        Delivery Man reaches the customer, delivers the food, and marks the order as complete and the food is delivered. Dispatch Service posts a Message to the queue about delivery completion.
+
+        Order Management Service reads Message and updates the status of the order to be completed.
+
+        Notification Service reads Message and notifies the restaurant and the customer about the delivery of food.</pre></div>
+        <div><a href=""></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcX91Z61YVkIlz-a6mwz9ZUHyjd_JyeRaDO8qpSI6S57X_8B4MnPBpOotHAZ0e3Awbqk&usqp=CAU"height="210" width="300" alt="">
+            
+            <big><p>ABOUT RECIPES5</p></big>
+            <pre >
+            Read recipes from beginning to end, to understand the steps
+
+            Note information on ingredient prep, techniques, and other tips
+                
+            If needed convert the volume of the recipe  
+                
+            Gather ingredients, equipment, and tools
+                
+            Apply common sense when measuring ingredients to be sure you have the correct quantity and ratio
+                
+            Use basic judgment when preparing; for example, do you understand the basic steps for preparing a stock? If not, read up on the steps and tips to preparing it before you start
+                
+            Observe oven temperatures, cooking times, and specific equipment
+                
+            Take written notes of any changes you made in measurements, cooking times and temperatures, or procedures so that you can reproduce the recipe with similar results</pre></div>
+            <div>
+
+            </div>
+            
+    
+</body>
+</html>
